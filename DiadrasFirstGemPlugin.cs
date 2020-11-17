@@ -142,7 +142,7 @@ namespace Turbo.Plugins.Resu
                                      StrickenPercentDecorator.Paint(monsterScreenCoordinate.X + offsetX, (float)(monsterScreenCoordinate.Y + offsetY +(propSquare/2.5)), propSquare, propSquare, HorizontalAlign.Right);
                                      if (cooldown)
                                         { 
-                                          StrickenPercentDecorator.TextFunc = () => "\u231B";
+                                          StrickenPercentDecorator.TextFunc = () => Char.ConvertFromUtf32(0x0000231B);
                                           StrickenPercentDecorator.Paint((float)(monsterScreenCoordinate.X + offsetX +(propSquare/2)),monsterScreenCoordinate.Y + offsetY, propSquare, propSquare, HorizontalAlign.Center);
                                         } 
                 

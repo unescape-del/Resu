@@ -1521,8 +1521,8 @@ namespace Turbo.Plugins.Resu
                 }
                 if (ArcaneEnchanted)
                 {
-                    if (actor.SnoActor.Sno == ActorSnoEnum._monsteraffix_arcaneenchanted_petsweep /*219702*/) ArcaneDecorator.Paint(layer, actor, actor.FloorCoordinate, "\u21BA");
-                    if (actor.SnoActor.Sno == ActorSnoEnum._monsteraffix_arcaneenchanted_petsweep_reverse /*221225*/) ArcaneDecorator.Paint(layer, actor, actor.FloorCoordinate, "\u21BB");
+                    if (actor.SnoActor.Sno == ActorSnoEnum._monsteraffix_arcaneenchanted_petsweep /*219702*/) ArcaneDecorator.Paint(layer, actor, actor.FloorCoordinate, "big ass 1"); //Char.ConvertFromUtf32(0x000021BA)
+                    if (actor.SnoActor.Sno == ActorSnoEnum._monsteraffix_arcaneenchanted_petsweep_reverse /*221225*/) ArcaneDecorator.Paint(layer, actor, actor.FloorCoordinate, "big ass 2"); //Char.ConvertFromUtf32(0x000021BB)
                 }
 
                 if (actor.SnoActor.Sno == ActorSnoEnum._x1_monsteraffix_corpsebomber_bomb_start /*340319*/ && PoisonEnchanted)

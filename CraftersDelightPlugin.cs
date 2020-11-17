@@ -531,9 +531,9 @@ namespace Turbo.Plugins.Resu
                 {
                     if (DisplayItem((byte)firstItem.Quality))
                     {
-                        if (firstItem.IsNormal) { NormalDecorator.Paint(layer, firstItem, firstItem.FloorCoordinate, "\u2605"); }
-                        else if (firstItem.IsMagic) { MagicDecorator.Paint(layer, firstItem, firstItem.FloorCoordinate, "\u2605"); }
-                        else if (firstItem.IsRare) { RareDecorator.Paint(layer, firstItem, firstItem.FloorCoordinate, "\u2605"); }
+                        if (firstItem.IsNormal) { NormalDecorator.Paint(layer, firstItem, firstItem.FloorCoordinate, Char.ConvertFromUtf32(0x00002605)); }
+                        else if (firstItem.IsMagic) { MagicDecorator.Paint(layer, firstItem, firstItem.FloorCoordinate, Char.ConvertFromUtf32(0x00002605)); }
+                        else if (firstItem.IsRare) { RareDecorator.Paint(layer, firstItem, firstItem.FloorCoordinate, Char.ConvertFromUtf32(0x00002605)); }
                     }
                 }
 
@@ -567,7 +567,7 @@ namespace Turbo.Plugins.Resu
                     }
                     else if (SameAsArmory(item) && Equipped)
                     {
-                        EquippedDecorator.Paint(layer, item, item.FloorCoordinate, "\u2694");
+                        EquippedDecorator.Paint(layer, item, item.FloorCoordinate, Char.ConvertFromUtf32(0x00002694));
                     }
 
                     if (item.AncientRank < 1 || !ShowAncientRank) continue;

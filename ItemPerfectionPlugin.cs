@@ -112,7 +112,7 @@ namespace Turbo.Plugins.Resu
                 
             
             var offPercent = Math.Round(offCount/countAffixes*100, 2).ToString();
-            var offSymbol = "\u2694";
+            var offSymbol = Char.ConvertFromUtf32(0x002694);
             var offSpace = "";
             if (offPercent == "0") {offPercent = "";} 
             else {
@@ -125,7 +125,7 @@ namespace Turbo.Plugins.Resu
                  } 
                  
             var defPercent = Math.Round(defCount/countAffixes*100, 2).ToString();
-            var defSymbol = "\u26e8";
+            var defSymbol = Char.ConvertFromUtf32(0x0026e8);
             var defSpace = "";
             if (defPercent == "0") {defPercent = "";} 
             else {
@@ -138,7 +138,7 @@ namespace Turbo.Plugins.Resu
                  }
             
             var lifePercent = Math.Round(lifeCount/countAffixes*100, 2).ToString();
-            var lifeSymbol = "\u2764";
+            var lifeSymbol = Char.ConvertFromUtf32(0x002764);
             var lifeSpace = "";
             if (lifePercent == "0") {lifePercent = "";} 
             else {
@@ -151,7 +151,7 @@ namespace Turbo.Plugins.Resu
                  }
             
             var resPercent = Math.Round(resCount/countAffixes*100, 2).ToString();
-            var resSymbol = "\ud83d\udd2e";
+            var resSymbol =  Char.ConvertFromUtf32(0x1F52E);
             var resSpace = "";
             if (resPercent == "0") {resPercent = "";}
             else {
@@ -164,7 +164,7 @@ namespace Turbo.Plugins.Resu
                  }
             
             var advPercent = Math.Round(advCount/countAffixes*100, 2).ToString();
-            var advSymbol = "\ud83d\udc62";
+            var advSymbol = Char.ConvertFromUtf32(0x1F462);
             var advSpace = "";
             if (advPercent == "0") {advPercent = "";} 
             else {
@@ -176,7 +176,7 @@ namespace Turbo.Plugins.Resu
                   advPercent = Environment.NewLine + advSymbol + advSpace + advPercent + "%";
                  }
 
-            var perfSymbol = "\u2713";
+            var perfSymbol = Char.ConvertFromUtf32(0x002713);
             var perfSpace = "";
             var perfPercent = Perfection.ToString();
                   if (perfPercent.Length == 1) perfSpace = "     ";

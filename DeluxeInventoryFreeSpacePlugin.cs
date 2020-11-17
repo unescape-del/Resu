@@ -75,7 +75,7 @@ namespace Turbo.Plugins.Resu
                 BackgroundTexture2 = Hud.Texture.BackgroundTextureOrange,
                 BackgroundTextureOpacity1 = 1.0f,
                 BackgroundTextureOpacity2 = 1.0f,
-                TextFunc = () => "\u25A0 " + (Hud.Game.Me.InventorySpaceTotal - Hud.Game.InventorySpaceUsed).ToString("D", CultureInfo.InvariantCulture),
+                TextFunc = () => Char.ConvertFromUtf32(0x000025A0) + (Hud.Game.Me.InventorySpaceTotal - Hud.Game.InventorySpaceUsed).ToString("D", CultureInfo.InvariantCulture),
                 HintFunc = () => "free space in inventory for one slot items",
             };
 
@@ -86,7 +86,7 @@ namespace Turbo.Plugins.Resu
                 BackgroundTexture2 = Hud.Texture.BackgroundTextureOrange,
                 BackgroundTextureOpacity1 = 1.0f,
                 BackgroundTextureOpacity2 = 1.0f,
-                TextFunc = () => "\u25A0 " + (Hud.Game.Me.InventorySpaceTotal - Hud.Game.InventorySpaceUsed).ToString("D", CultureInfo.InvariantCulture),
+                TextFunc = () => Char.ConvertFromUtf32(0x000025A0) + " " + (Hud.Game.Me.InventorySpaceTotal - Hud.Game.InventorySpaceUsed).ToString("D", CultureInfo.InvariantCulture),
                 HintFunc = () => "free space in inventory for one slot items",
             };
 
@@ -97,7 +97,7 @@ namespace Turbo.Plugins.Resu
                 BackgroundTexture2 = Hud.Texture.BackgroundTextureOrange,
                 BackgroundTextureOpacity1 = 1.0f,
                 BackgroundTextureOpacity2 = 1.0f,
-                TextFunc = () => "\u25A0 " + (Hud.Game.Me.InventorySpaceTotal - Hud.Game.InventorySpaceUsed).ToString("D", CultureInfo.InvariantCulture),
+                TextFunc = () => Char.ConvertFromUtf32(0x000025A0) + " " + (Hud.Game.Me.InventorySpaceTotal - Hud.Game.InventorySpaceUsed).ToString("D", CultureInfo.InvariantCulture),
                 HintFunc = () => "free space in inventory for one slot items",
             };
             
@@ -108,7 +108,7 @@ namespace Turbo.Plugins.Resu
                 BackgroundTexture2 = Hud.Texture.BackgroundTextureOrange,
                 BackgroundTextureOpacity1 = 1.0f,
                 BackgroundTextureOpacity2 = 1.0f,
-                TextFunc = () => "\u2588 " + freeSpaceTwo.ToString("D", CultureInfo.InvariantCulture),
+                TextFunc = () => Char.ConvertFromUtf32(0x00002588) + " " + freeSpaceTwo.ToString("D", CultureInfo.InvariantCulture),
                 HintFunc = () => "free space in inventory for two slot items",
             };
 
@@ -119,7 +119,7 @@ namespace Turbo.Plugins.Resu
                 BackgroundTexture2 = Hud.Texture.BackgroundTextureOrange,
                 BackgroundTextureOpacity1 = 1.0f,
                 BackgroundTextureOpacity2 = 1.0f,
-                TextFunc = () => "\u2588 " + freeSpaceTwo.ToString("D", CultureInfo.InvariantCulture),
+                TextFunc = () => Char.ConvertFromUtf32(0x00002588) + " " + freeSpaceTwo.ToString("D", CultureInfo.InvariantCulture),
                 HintFunc = () => "free space in inventory for two slot items",
             };
 
@@ -130,7 +130,7 @@ namespace Turbo.Plugins.Resu
                 BackgroundTexture2 = Hud.Texture.BackgroundTextureOrange,
                 BackgroundTextureOpacity1 = 1.0f,
                 BackgroundTextureOpacity2 = 1.0f,
-                TextFunc = () => freeSpaceTwo == int.MaxValue ? "\u25AE ?" : "\u25AE" + freeSpaceTwo.ToString("D", CultureInfo.InvariantCulture),
+                TextFunc = () => freeSpaceTwo == int.MaxValue ? Char.ConvertFromUtf32(0x000025A0) + " ?" : Char.ConvertFromUtf32(0x000025AE) + " " + freeSpaceTwo.ToString("D", CultureInfo.InvariantCulture),
                 HintFunc = () => "free space in inventory for two slot items",
             };
 

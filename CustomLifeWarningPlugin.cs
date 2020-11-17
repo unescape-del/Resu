@@ -70,7 +70,7 @@ namespace Turbo.Plugins.Resu
             ShieldDecorator = new TopLabelDecorator(Hud)
             {
                 TextFont = Hud.Render.CreateFont("tahoma", 12, 200, 160, 160, 215, true, false, 255, 100, 0, 0, true),
-                TextFunc = () => "\u25CF",
+                TextFunc = () => Char.ConvertFromUtf32(0x000025CF),
             };
 
             CustomLifeWarningDecorator = new TopLabelDecorator(Hud)
